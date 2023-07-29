@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Management Tool</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Manage Your Projects</h1>
+  </div>
+  
+  <div class="container mt-5">
+    <h2>Add your Project below </h2>
+    <div class="form-group mt-4">
+      <label for="titleInput">Title:</label>
+      <input type="text" id="titleInput" class="form-control">
+    </div>
+    <div class="form-group mt-4">
+      <label for="descriptionInput">Description:</label>
+      <textarea id="descriptionInput" class="form-control"></textarea>
+    </div>
+    <div class="form-group mt-4">
+      <label for="codeInput">Code:</label>
+      <textarea id="codeInput" class="form-control"></textarea>
+    </div>
+    <div class="form-group mt-4">
+      <label for="fileInput">Upload File:</label>
+      <input type="file" id="fileInput" class="form-control-file">
+    </div>
+
+    <button id="addTaskBtn" class="btn btn-primary">Save</button>
+  </div>
+
+  <div class="container mt-5">
+    <h2>Projects Added (Preview)</h2>
+    <div id="taskList" class="mt-4"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
